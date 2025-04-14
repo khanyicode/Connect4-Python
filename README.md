@@ -1,45 +1,81 @@
-# Connect 4 Python
+# connect4-python
 
-A simple Connect Four game implemented in Python.
+A simple Connect Four game implemented in Python, following Test-Driven Development (TDD) principles.
 
 ## Description
 
-This project is a classic Connect Four game where two players take turns dropping colored discs into a vertical grid. The goal is to be the first to form a line of four of their own discs horizontally, vertically, or diagonally.
+This project provides a basic Connect Four game with core functionalities, including board representation and win detection. The focus is on demonstrating TDD workflow and clean code implementation.
 
 ## Key Features
 
-- **Game Board**: A grid structure to hold the game pieces.
-- **Winning Move**: Detects when a player has achieved four in a row.
-- **Basic Game Logic**: Handles player turns and piece placement.
-- **AI Opponent**: (Implemented in `connect4_with_ai.py`) Play against a computer opponent.
-- **Testing**: (Implemented in `connect_test.py`) Includes unit tests to ensure game logic is correct.
+- **Game Board:** A 2D representation of the Connect Four board.
+- **Winning Move Detection:** Functionality to check for horizontal, vertical, and diagonal wins.
 
 ## Technologies Used
 
 - Python
-- NumPy
-- Pygame
+- NumPy (for efficient array manipulation)
+- Pygame (for potential future graphical interface enhancements)
 
 ## Installation
 
-To run this game, you need to have Python installed, along with the `numpy` and `pygame` libraries. Here's how to install them:
+1.  **Clone the Repository:**
+    ```bash
+    git clone [your_repository_url]
+    cd connect4-python
+    ```
+2.  **Ensure Python is Installed:** Python 3.x is required.
+3.  **Install Dependencies (if any):**
+    ```bash
+    # If using numpy or pygame, install them with pip
+    pip install numpy pygame
+    ```
 
-### Install Python
+## Basic Usage
 
-1. Download the latest version of Python from the official website: [Python Downloads](https://www.python.org/downloads/)
-2. Follow the installation instructions for your operating system.
-3. Make sure to add Python to your system's PATH during the installation.
+1.  **Run the Tests:**
+    ```bash
+    python -m unittest connect_test.py
+    ```
+    This will execute the test suite to verify the core functionality.
+2.  **Run the Game (if you have game logic):**
+    ```bash
+    python connect4.py
+    ```
 
-### Install NumPy and Pygame
+## Features Overview
 
-1. Open a terminal or command prompt.
+-   **Test-Driven Development:** The project emphasizes TDD, ensuring robust and reliable code.
+-   **Horizontal Win Detection:** Implemented and tested.
+-   **Extensible:** Designed to accommodate future features like vertical and diagonal win detection, and AI integration.
 
-### Running the Game
-1.  python connect4.py
+## Configuration Options
 
-### Running Unit Tests
+-   Currently, the game parameters (board size, etc.) are hardcoded. Future iterations can introduce configuration files or command-line arguments.
 
-1.python -m unittest connect_test.py
+## Troubleshooting
+
+-   **Test Failures:** If tests fail, review the `connect_test.py` file and the corresponding implementation in `connect4.py`.
+-   **Import Errors:** Ensure that all required libraries (NumPy, Pygame) are correctly installed.
+
+## Contributing Guidelines
+
+1.  **Fork the Repository:** Create your own copy of the project.
+2.  **Create a Branch:** `git checkout -b feature/your-feature`
+3.  **Make Changes:** Implement your feature or fix.
+4.  **Commit Changes:** `git commit -m "Add your feature"`
+5.  **Push Changes:** `git push origin feature/your-feature`
+6.  **Create a Pull Request:** Submit your changes for review.
+
+## License Information
+
+-   (Add your license information here, e.g., MIT License)
+
+## Code Structure Overview
+
+-   `connect4.py`: Contains the core game logic.
+-   `connect4_with_ai.py`: Includes AI implementation for Connect Four.
+-   `connect_test.py`: Contains unit tests for the game functionality.
 
 Video walkthrough on programming this game: https://youtu.be/UYgyRArKDEs
 
