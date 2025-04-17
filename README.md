@@ -27,7 +27,7 @@ This project provides a basic Connect Four game with core functionalities, inclu
 2.  **Ensure Python is Installed:** Python 3.x is required.
 3.  **Install Dependencies (if any):**
     ```bash
-    # If using numpy or pygame, install them with pip
+    # Install them with pip
     pip install numpy pygame
     ```
 
@@ -38,7 +38,7 @@ This project provides a basic Connect Four game with core functionalities, inclu
     python -m unittest connect_test.py
     ```
     This will execute the test suite to verify the core functionality.
-2.  **Run the Game (if you have game logic):**
+2.  **Run the Game **
     ```bash
     python connect4.py
     ```
@@ -69,7 +69,7 @@ This project provides a basic Connect Four game with core functionalities, inclu
 
 ## License Information
 
--   (Add your license information here, e.g., MIT License)
+-    MIT License
 
 ## Code Structure Overview
 
